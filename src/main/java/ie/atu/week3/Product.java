@@ -1,8 +1,6 @@
 package ie.atu.week3;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -11,6 +9,7 @@ import lombok.Data;
 //NOTE Lombok is causing problems for me
 public class Product {
     @NotBlank
+    @Size (min = 2, max = 50)
     private String name;
     @NotNull
     @Positive
