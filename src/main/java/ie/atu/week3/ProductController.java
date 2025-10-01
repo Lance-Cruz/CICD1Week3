@@ -31,4 +31,9 @@ public class ProductController {
         return mylist;
     }
 
+    @GetMapping("/getProductsSize")
+    public int getProductSize(){
+        return mylist.size();
+    }
+
 }
