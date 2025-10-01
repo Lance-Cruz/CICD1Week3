@@ -26,4 +26,9 @@ public class ProductController {
         return myProduct;
     }
 
+    @PostMapping("/addBulkProducts")
+    public List<Product> addBulkProducts(@Valid @RequestBody List<Product> mylist){
+        return mylist;
+    }
+
 }
